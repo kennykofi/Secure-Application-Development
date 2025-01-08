@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "@google-cloud/recaptcha-enterprise": "^5.8.0",
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "geoip-lite": "^1.4.10",
+    "jsonwebtoken": "^9.0.2",
+    "node": "^22.2.0",
+    "pg": "^8.11.5",
+    "request-ip": "^3.3.0"
+  }
+}

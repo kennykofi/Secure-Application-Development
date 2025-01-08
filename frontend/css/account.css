@@ -1,0 +1,369 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("media/accountbckg.png");
+}
+
+
+/* first page */
+.container {
+    display: inline-flex;
+    flex-direction: row;
+    height: 90vh;
+    margin-top: 20px;
+}
+.sidebar {
+    background-color: #333;
+    color: white;
+    width: 70px; 
+    height: 90vh; 
+    border-radius: 28px;
+    margin-left: 10px;
+    position: fixed; 
+    overflow-x: hidden; 
+    padding-top: 20px; 
+}
+
+.sidebar-icons {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+
+.sidebar-icons li {
+    padding: 12px; 
+}
+
+.sidebar-icons li a {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 60px; 
+}
+
+.sidebar-icons li a img {
+    transition: transform 0.3s; 
+    width: 25px;
+    height: auto;
+}
+
+.sidebar-icons li:hover a img {
+    transform: scale(1.1); 
+}
+
+.sidebar-icons li a:hover {
+    background-color: #555; 
+    border-radius: 30px;
+}
+
+/* Additional styles for active or current page */
+.sidebar-icons li.active a,
+.sidebar-icons li a:focus {
+    background-color: #666; 
+    border-left: 3px solid cyan; 
+}
+.settings {
+    font-family: 'Arial', sans-serif;
+    width: 100%; 
+    max-width: 960px; 
+    margin: 0 auto; 
+    padding: 20px; 
+  
+}
+
+h2 {
+    text-align: left;
+    margin-bottom: 10px; 
+    font-size: 30px;
+
+}
+
+
+.tabs {
+    display: flex;
+    justify-content: space-around; 
+    margin-bottom: 20px; 
+}
+
+.tab {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition:  transform 0.3s; 
+}
+
+.tab:hover, .tab.active {
+    background-color: #B8D8C7; 
+    color: rgb(0, 0, 0);
+    border-radius: 40px;
+    transform: translateY(-2px); 
+}
+
+
+.info {
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+
+.field {
+    margin-bottom: 20px;
+}
+
+.field label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.field input {
+    padding: 10px;
+    margin-right: 10px;
+    width: 300px;
+}
+
+.field button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+h2 {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+#notifications h3 {
+
+    margin-top: 70px;
+}
+
+
+.notification-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #e6f7ff; 
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.edit-all-button {
+    width: 10%;
+    flex-grow: 1;
+    margin-left: 865px;
+    padding: 10px;
+    margin-bottom: 20px; 
+    background-color:inherit; 
+    border: 2px solid #4CAF50;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+.setting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #e6f7ff; 
+    border-radius: 5px;
+}
+
+.switch.active .slider {
+    background-color: #2196F3; 
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #7ac89e;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #7ac89e;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+
+.info {
+    display: none;
+}
+
+.info.active {
+    display: block;
+}
+
+/* documents */
+
+.setting {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #e6f7ff; 
+    border-radius: 5px;
+}
+
+#documents > h3 {
+
+    margin-top: 60px;
+
+}
+.controls {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    gap: 10px; 
+}
+
+.change-button {
+    padding: 5px 15px;
+    background-color: inherit; 
+    border: 1px solid #4CAF50;
+    color: black;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 14px; 
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ccc; 
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #B8D8C7; 
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px); 
+}
+
+input:disabled + .slider {
+    background-color: #ddd; 
+}
+
+input:checked:disabled + .slider {
+    background-color: #B8D8C7; 
+}
+.account-settings {
+    position: relative;
+}
+.s-pin-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; 
+}
+
+.s-pin-modal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+.pin-inputs input {
+    width: 40px;
+    margin: 0 5px;
+    font-size: 24px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.keypad button {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    font-size: 16px;
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 5px;
+}
+
+.confirm-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
